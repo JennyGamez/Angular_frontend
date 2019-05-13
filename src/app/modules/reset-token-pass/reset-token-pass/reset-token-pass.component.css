@@ -5,7 +5,7 @@
     background-image: url(../../img/fondo.jpg);
 }
 
-.resetPassForm input {
+.resetTokenPassForm input {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -17,17 +17,17 @@
     font-size: 0.95em;
 }
 
-.resetPassForm input[type="email"] {
+.resetTokenPassForm input[type="email"] {
     background: #fff;
     border-color: #bbb;
     color: #555;
 }
 
-.resetPassForm input[type="email"]:focus {
+.resetTokenPassForm input[type="email"]:focus {
     border-color: red;
 }
 
-.resetPassForm input[type="submit"] {
+.resetTokenPassForm input[type="submit"] {
     background: rgb(1, 29, 51);
     border-color: transparent;
     color: #fff;
@@ -66,7 +66,7 @@
     margin-top: -6%;
 }
 
-.resetPassForm .glyphicon {
+.resetTokenPassForm .glyphicon {
     position: relative;
     top: -38px;
     display: inline-block;

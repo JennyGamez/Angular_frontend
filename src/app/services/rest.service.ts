@@ -9,7 +9,7 @@ import { retry, catchError } from 'rxjs/operators';
 export class RestService {
 
   apiUrl = 'http://192.168.113.177/api_skinatech/api/web/version1';
-  //jsonsend = any;
+  //apiUrl = ' http://192.168.1.77/api_skinatech/api/web/version1';
 
   constructor(private http: HttpClient) { }
 
@@ -25,7 +25,12 @@ export class RestService {
     return this.http.get<Response>(this.apiUrl + '/default', this.httpOptions)
   }
 
-  getSite(data): Observable<Response> {
-    return this.http.post<Response>(this.apiUrl + '/site/request-password-reset', 'jsonsend=' + JSON.stringify(data), this.httpOptions)
+  requestPassword(data): Observable<Response> {
+    return this.http.post<Response>(this.apiUrl + '/site/request-password-reset', 'jsonSend=' + JSON.stringify(data), this.httpOptions)
   }
+
+  //requestPasswordReset(data): Observable<Response> {
+  //  return this.http.get<Response>(this.apiUrl + '/site/request-password', this.httpOptions)
+  //}
+
 }

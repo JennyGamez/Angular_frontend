@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { StarterModule } from './modules/starter/starter.module';
 import { LoginModule } from './modules/login/login.module';
 import { ResetPassModule } from './modules/reset-pass/reset-pass.module';
+import { ResetTokenPassModule } from './modules/reset-token-pass/reset-token-pass.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ResetPassModule } from './modules/reset-pass/reset-pass.module';
     HttpModule,
     HttpClientModule,
     LoginModule,
-    ResetPassModule
+    ResetPassModule,
+    ResetTokenPassModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {ResetPassComponent} from "./reset-pass/reset-pass.component";
+import { ResetPassComponent } from "./reset-pass/reset-pass.component";
 
 const routes: Routes = [{
   path: 'reset', component: ResetPassComponent,
