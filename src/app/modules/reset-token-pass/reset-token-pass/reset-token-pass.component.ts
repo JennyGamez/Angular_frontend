@@ -13,8 +13,8 @@ export class ResetTokenPassComponent implements OnInit {
 
   mensaje: any;
   paramToken: string;
-  textloading= 'Hola 2';
   statusloading = true;
+  textloading = 'Por favor espere unos segundos y será redireccionado al login para que inicie sesión con su nueva contraseña';
   
   constructor(
     private restService: RestService, 
@@ -54,8 +54,9 @@ export class ResetTokenPassComponent implements OnInit {
     this.restService.requestTokenPasswordPost(this.resetTokenPassForm.value).subscribe(data => {
       this.mensaje = data;
       console.log('@@@ '+JSON.stringify(this.resetTokenPassForm.value)+' --- '+this.mensaje.status+' *** '+JSON.stringify(this.mensaje));
-      //this.statusloading = false;
     })
+    //this.statusloading = false;
+    this.router.navigate(['/login']);
     
   }
 
@@ -75,4 +76,5 @@ export class ResetTokenPassComponent implements OnInit {
       }
     })
   }
+
 }
