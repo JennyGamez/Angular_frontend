@@ -5,7 +5,7 @@ import { ResetTokenPassComponent } from './modules/reset-token-pass/reset-token-
 const routes: Routes = [
   //{ path: '', redirectTo: 'starter', pathMatch: 'full' }
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'resettokenpass', component: ResetTokenPassComponent,}
+  { path: 'resettokenpass/:params', component: ResetTokenPassComponent,}
 ];
 
 @NgModule({

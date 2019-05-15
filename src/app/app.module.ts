@@ -12,9 +12,11 @@ import { ResetPassModule } from './modules/reset-pass/reset-pass.module';
 import { ResetTokenPassModule } from './modules/reset-token-pass/reset-token-pass.module';
 
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    //LoadingScreenComponent
   ],
   imports: [
     BrowserModule,
